@@ -1,5 +1,4 @@
 # I am create this file
-from django.http import HttpResponse
 from django.shortcuts import render
 from home.models import Contact
 from datetime import datetime
@@ -42,18 +41,3 @@ def contact(request):
         contact.save()
 
     return render(request, 'contact.html')
-
-def removing(request):
-    return HttpResponse("removing")
-
-
-def capitalize(request):
-    return HttpResponse("capitalize")
-
-
-def line_remover(request):
-    return HttpResponse("line_remover")
-
-
-def spa(request):
-    return HttpResponse("spa")
